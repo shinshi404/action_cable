@@ -58,4 +58,17 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  # Action Cable endpoint configuration
+  # # config.action_cable.url = 'wss://example.com/cable'
+  #config.action_cable.allowed_request_origins = [ /https?:\/\/.*/ ]
+  config.action_cable.disable_request_forgery_protection = true  
+  #
+  # # Don't mount Action Cable in the main server process.
+  #config.action_cable.mount_path = nil
+  config.web_console.whitelisted_ips = '0.0.0.0/0'
+  config.action_cable.allowed_request_origins = [ 'http://153.126.214.251:3000' ]
+
+  config.action_mailer.default_url_options = { host: 'http://153.126.214.251', port: 80 }
+
 end

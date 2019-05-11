@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+  
+<div class="main-container">
   <head>
-    <title>ActionCable</title>
+    <title>RealTimeChat</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +12,12 @@
   </head>
 
   <body>
+   <div style="background-color: #9933FF">
+     <h1>RealTimeChat Room</h1>
+   </div>
     <%= yield %>
   </body>
+   <p class="notice"><%= notice %></p>
+   <p class="alert"><%= alert %></p>
+</div>
 </html>

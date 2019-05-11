@@ -1,0 +1,16 @@
+// Place all the styles related to the rooms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.room-container {
+  width: 700px;
+  min-height: 300px;
+  color : #000000;
+  margin-right: auto;//コンテンツにだけ中央寄せを指定
+  margin-left : auto;
+  margin-top: 1.5%; 
+  margin-bottom: 1.5%;
+  background-color :#ffffff;
+  font-size: 1.6em;
+  line-height: 1.5em;
+  border-radius: 15px;
+}
