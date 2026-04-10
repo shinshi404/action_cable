@@ -1,5 +1,7 @@
 # README
 
+Rails5で導入されたaction cableをテストした時のもの
+
 * Ruby version
 2.5.1
 
